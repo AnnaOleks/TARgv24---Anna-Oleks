@@ -18,12 +18,15 @@ eesnimi="Jaak"
 pikkus=16.5
 kas_käib_koolis=True
 print(type(vanus))
+print(type(eesnimi))
+print(type(pikkus))
+print(type(kas_käib_koolis))
 
 
 #Ülesanne 3
 kokku=randint(1,1000)
 print(f"Kokku on {kokku} kommi")
-kommi=int(input("Mitu kommi sa tahad?"))
+kommi=int(input("Mitu kommi sa tahad? "))
 kokku=kokku-kommi
 print(f"Jääk on {kokku} kommi")
 
@@ -31,6 +34,16 @@ print(f"Jääk on {kokku} kommi")
 #Ülesanne 4
 print("Läbimõõdu leidmine")
 #´l-ümbermõõt
-l=float(input("Ümbermõõt"))
+l=float(input("Ümbermõõt: "))
 d=l/pi
 print(f"Läbimõõdu suurus on {round(d,2)}")
+
+
+#Ülesanne 5
+N=float(input("Külg 1: "))
+M=float(input("Külg 2: "))
+L=sqrt(pow(N,2)+pow(M,2))
+print(f"Maatüki diagonaal on {round(L,2)}")
+
+
+#Ülesanne 6
