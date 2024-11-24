@@ -47,3 +47,44 @@ print(f"Maatüki diagonaal on {round(L,2)}")
 
 
 #Ülesanne 6
+aeg=float(input("Mitu tundi kulus sõiduks? "))
+teepikkus=float(input("Mitu kilomeetrit sõitsid? "))
+kiirus=teepikkus/aeg
+print(f"Sinu kiirus oli {round(kiirus,2)} km/h")
+
+
+#Ülesanne 7
+A=int(input("Arv 1: "))
+B=int(input("Arv 2: "))
+C=int(input("Arv 3: "))
+D=int(input("Arv 4: "))
+E=int(input("Arv 5: "))
+F=(A+B+C+D+E)/5
+print(f"Keskmine aritmeetiline: {F}")
+
+
+#Ülesanne 8
+print(" @..@ ")
+print("(----)")
+print("(\__/)")
+print("^^ "" ^^")
+
+
+#Ülesanne 9
+a=int(input("Külg a: "))
+b=int(input("Külg b: "))
+c=int(input("Külg c: "))
+P=a+b+c
+print(f"Ümbermõõt: {P}")
+
+
+#Ülesanne 10
+pizza=12.90
+jootraha=12.90*0.1
+summa=pizza+jootraha
+üks=summa/2
+print(f"Pzzi maksab: {pizza}")
+print(f"Jootraha: {jootraha}")
+print(f"Summa: {round(summa,2)}")
+print(f"Anna peab maksma: {round(üks,2)}")
+print(f"P peab maksma: {round(üks,2)}")
