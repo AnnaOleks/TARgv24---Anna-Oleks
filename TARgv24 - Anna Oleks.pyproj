@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Vigade otsing -1.py</StartupFile>
+    <StartupFile>Tingimuslik operaator IF.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Lihtsad_prgrammid.py" />
     <Compile Include="TARgv24___Anna_Oleks.py" />
+    <Compile Include="Tingimuslik operaator IF.py" />
     <Compile Include="Vigade otsing -1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
