@@ -25,6 +25,7 @@
     <Compile Include="TARgv24___Anna_Oleks.py" />
     <Compile Include="Tingimuslik operaator IF.py" />
     <Compile Include="Vigade otsing -1.py" />
+    <Compile Include="Kontroll.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
