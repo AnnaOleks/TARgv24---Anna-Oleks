@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tingimuslik operaator IF.py</StartupFile>
+    <StartupFile>04 - Tingimuslik operaator IF.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,11 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Lihtsad_prgrammid.py" />
-    <Compile Include="TARgv24___Anna_Oleks.py" />
-    <Compile Include="Tingimuslik operaator IF.py" />
-    <Compile Include="Vigade otsing -1.py" />
+    <Compile Include="02 - Praktiline töö. Lihtsad prgrammid.py" />
+    <Compile Include="01 - Funktsioonide print%28%29,input%28%29, float%28%29, int%28%29 kasutamine.py" />
+    <Compile Include="04 - Tingimuslik operaator IF.py" />
+    <Compile Include="03 - Iseseisev töö. Vigade otsing - 1.py" />
     <Compile Include="Kontroll.py" />
+    <Compile Include="05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
