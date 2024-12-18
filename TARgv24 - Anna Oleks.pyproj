@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>06 - Kordused.py</StartupFile>
+    <StartupFile>09 - Praktiline töö. Plokkskeemide koostamine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,9 @@
     <Compile Include="Kontroll.py" />
     <Compile Include="05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="06 - Kordused.py" />
+    <Compile Include="07 - Praktiline töö. Matemaatika.py" />
+    <Compile Include="08 - Iseseisevöö. Vigade otsing -2. Sirakus.py" />
+    <Compile Include="09 - Praktiline töö. Plokkskeemide koostamine.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
