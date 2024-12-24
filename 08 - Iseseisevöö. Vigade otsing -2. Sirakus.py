@@ -6,6 +6,7 @@
 # Найдите и исправьте ошибки в программе:
 # Переведи программу на эстонский язык и добавьте в программу комментарии, для пояснения ошибок и того, как работают функции.
 # Tõlgi suhtlemise laused eesti keele ja lisa kommentaare koodi seletamiseks.
+from time import *
 
 print("*** ARVUDE MÄNG ***")
 print()
@@ -54,6 +55,7 @@ else:
     # else:
     #     print(с, " - Paaritu arv. Korrutame 3, liidame 1 ja jagame 2.")
     while c != 1:
+        sleep(1) # 1 секунда
         if c % 2 == 0:
             print('{:>4}'.format(round(c))," - Paaris arv, jagame 2.")
             c = c / 2
