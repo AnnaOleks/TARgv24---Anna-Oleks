@@ -5,8 +5,9 @@ while True:
     print("3-Показать задачи")
     print("4-Сортировать задачи")
     print("5-Добавить задачу в конкретное место в списке")
-    print("6-Удалить весь список")
-    print("7-Выйти из программы")
+    print("6-Добавить задачу в конкретное место в списке")
+    print("7-Удалить весь список")
+    print("8-Выйти из программы")
     print()
     while True:
         try:
@@ -57,9 +58,12 @@ while True:
         print(f"Задача -{soov}- добавлена на {koht} позицию")
         print()
     elif valik==6:
+        print(f"В списке {len(tasks)} задач")
+        print()
+    elif valik==7:
         tasks.clear()
         print(f"Ваш список задач удалён {tasks}")
         print()
-    elif valik==7:
+    elif valik==8:
         print("До свилания!")
         break
