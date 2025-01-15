@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>12 - Praktiline töö. Sõne ja järjesti funktsioonid.py</StartupFile>
+    <StartupFile>13 - Praktiline töö . Listid.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,6 +34,7 @@
     <Compile Include="10 - IF, While, For ja sisendi valideerimise ülesanded.py" />
     <Compile Include="11 - Jarjend. List.py" />
     <Compile Include="12 - Praktiline töö. Sõne ja järjesti funktsioonid.py" />
+    <Compile Include="13 - Praktiline töö . Listid.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
