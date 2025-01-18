@@ -35,6 +35,7 @@
     <Compile Include="11 - Jarjend. List.py" />
     <Compile Include="12 - Praktiline töö. Sõne ja järjesti funktsioonid.py" />
     <Compile Include="13 - Praktiline töö . Listid.py" />
+    <Compile Include="14 - Praktiline töö. Isikukood.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
