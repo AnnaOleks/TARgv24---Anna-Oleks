@@ -122,7 +122,7 @@
 #     except:
 #         print("!!!")
 # print("Postiindeksi analuus")
-# indeks_lis=list(str(postiindeks))
+# indeks_list=list(str(postiindeks))
 # s1=int(indeks_list[0])
 # print(f"Postiindeks {postiindeks} on {indeksid[s1-1]}")
 
