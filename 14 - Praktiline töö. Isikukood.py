@@ -195,6 +195,7 @@ while True:
             arvud.append(ik)
             print()
         
+        
         print(f"Õigete isikukoodide loetelu:\n{ikoodid}")  
         print()
         print()

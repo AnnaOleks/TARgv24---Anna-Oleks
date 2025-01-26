@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>15 - Def.py</StartupFile>
+    <StartupFile>16 - Praktiline töö. Isikukood.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,7 @@
     <Compile Include="01 - Funktsioonide print%28%29,input%28%29, float%28%29, int%28%29 kasutamine.py" />
     <Compile Include="04 - Tingimuslik operaator IF.py" />
     <Compile Include="03 - Iseseisev töö. Vigade otsing - 1.py" />
+    <Compile Include="DefIK.py" />
     <Compile Include="Kontroll.py" />
     <Compile Include="05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="06 - Kordused.py" />
@@ -38,6 +39,7 @@
     <Compile Include="14 - Praktiline töö. Isikukood.py" />
     <Compile Include="15 - Def.py" />
     <Compile Include="MMM.py" />
+    <Compile Include="16 - Praktiline töö. Isikukood.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
