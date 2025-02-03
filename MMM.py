@@ -109,4 +109,3 @@ def is_prime(a=randint(0,100))->bool:
 
 
 
-def date(päev:int,kuu:int,aasta:int)
