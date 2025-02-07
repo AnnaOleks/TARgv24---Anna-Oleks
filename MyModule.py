@@ -47,7 +47,7 @@ def parool()->str:
 
 def omaparool()->str:
     """Oma parooli sisestamine.
-    :rtype: any Oma parooli sisestamine
+    :rtype: str Oma parooli sisestamine
     """
     import string
     markid=string.punctuation
@@ -82,15 +82,19 @@ def autorizlog()->str:
                 break
             else:
                 print("Sellist kasutajat ei ole. Proovi uuesti!")
-                valju=str(input("Kas soovid proovida uuesti (U) või soovid väljuda? (X)"))
+                print()
+                valju=str(input("Kas soovid proovida uuesti (U) või soovid väljuda (X)? "))
+                print()
                 if valju.upper()=="U":
                     continue
                 elif valju.upper()=="X":
                     break
                 else:
                     print("Midagi läks valesti")
+                    print()
         except:
             print("Sellist kasutajat ei ole")
+            print()
     return nim
 
 def autorizparool(nim:str)->bool:
@@ -102,28 +106,123 @@ def autorizparool(nim:str)->bool:
     while True:
         try:
             sala=input("Sisesta parool: ")
+            print()
             if sala == paroolid[index_nim]:
                 print("Oled autoriseeritud")
+                print()
                 print()
                 break
             else: 
                 print("Vale parool. Proovi uuesti!")
                 print()
-                valju=input("Kas soovid proovida uuesti (U) või soovid väljuda (X)? ")
                 print()
-                if valju=="U":
-                    continue
-                elif valju=="X":
-                    break
-                else:
-                    print("Midagi läks valesti")
+                while True:
+                    try:
+                        valju=input("Kas soovid proovida uuesti (U) või soovid väljuda (X)? ")
+                        print()
+                        print()
+                        if valju.upper()=="U":
+                            continue
+                        elif valju.upper()=="X":
+                            break
+                        else:
+                            print("Midagi läks valesti")
+                            print()
+                    except:
+                        print("Midagi läks valesti")
+                        print()
         except:
             print("Sellist kasutajat ei ole")
+            print()
     return True
 
 def chname()->bool:
     """Kasutaja nime muutmine
     :rtype: bool Tagastab True, kui nimi on muudetud
     """
-    oldname=str(input("Sisesta kasutaja nimi: "))
-    index_oldname=login.index(nim)
+    oldname=str(input("Sisesta endine kasutajanimi: "))
+    if oldname in login:
+        index_oldname=login.index(oldname)
+        login.pop(index_oldname)
+        while True:
+            uusname=str(input("Sisesta uus kasutajanimi: "))
+            print()
+            if uusname in login:
+                print("Kahjuks selline kasutajanimi on juba olemas. Vali teine kasutajanimi!")
+                print()
+            else: 
+                login.insert(index_oldname, uusname)
+                print("Kasutajanimi on muudetud")
+                print()
+                break
+    else:
+        print("Kahjuks sellist kasutajat ei ole!")
+        print()
+    return True
+
+def chparool()->bool:
+    """Kasutaja parooli muutmine
+    :rtype: bool Tagastab True, kui parool on muudetud
+    """
+    nim=input("Sisesta kasutajanimi: ")
+    if nim in login:
+        index_nim=login.index(nim)
+        while True:
+            oldparool=input("Sisesta endine parool: ")
+            print()
+            if oldparool==paroolid[index_nim]:
+                uusparool=parool()
+                paroolid.pop(index_nim)
+                paroolid.insert(index_nim,uusparool)
+                print("Parool on muudetud!")
+                print()
+                return True
+    else:
+        print("Kahjuks sellist kasutajat ei ole!")
+        print()
+    return False
+
+def chandmed()->bool:
+    """Kasutaja andmete muutmine
+    :rtype: bool Tagastab True
+    """
+    while True:
+        try:
+            muutus=int(input("Millised andmed soovid muutuda?\n1-Nimi\n2-Parool\n3-Tagasi\nSinu valik: "))
+            print()
+            if muutus==1:
+                vahetus=chname()
+                break
+            elif muutus==2:
+                vahetus=chparool()
+                break
+            elif muutus==3:
+                return False
+                break
+            else:
+                print("Vale sisend! Vali 1,2 või 3!")
+                print()
+        except:
+            print("Vale sisend! Sisesta number.")
+            print()
+    return True
+
+def parooltaast()->str:
+    """Kasutaja parooli taastamine
+    :rtype: str Näitab ekraanil kasutaja parooli
+    """
+    while True:
+        try:
+            nim=input("Sisesta kasutajanimi: ")
+            print()
+            index_nim=login.index(nim)
+            par=paroolid[index_nim]
+            print(f"Sinu kasutaja nimi on: {nim}\nSinu parool on: {par}")
+            print()
+            break
+        except:
+            print("Sellist kasutajat ei ole")
+            print()
+    return par
+
+

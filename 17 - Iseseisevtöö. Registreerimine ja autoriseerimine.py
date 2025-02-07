@@ -8,6 +8,12 @@ while True:
         nim=autorizlog()
         autorizparool(nim)
     elif teh==3:
+        chandmed()
+    elif teh==4:
+        parooltaast()
+    elif teh==5:
+        print("Head aega!")
+        break
     else:
         print("Midagi läks valesti")
         print()
