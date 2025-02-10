@@ -21,22 +21,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="02 - Praktiline töö. Lihtsad prgrammid.py" />
-    <Compile Include="01 - Funktsioonide print%28%29,input%28%29, float%28%29, int%28%29 kasutamine.py" />
-    <Compile Include="04 - Tingimuslik operaator IF.py" />
-    <Compile Include="03 - Iseseisev töö. Vigade otsing - 1.py" />
+    <Compile Include="01 - Lineaarsed programmid\02 - Praktiline töö. Lihtsad prgrammid.py" />
+    <Compile Include="01 - Lineaarsed programmid\01 - Funktsioonide print%28%29,input%28%29, float%28%29, int%28%29 kasutamine.py" />
+    <Compile Include="02 - Valikud\04 - Tingimuslik operaator IF.py" />
+    <Compile Include="01 - Lineaarsed programmid\03 - Iseseisev töö. Vigade otsing - 1.py" />
     <Compile Include="DefIK.py" />
     <Compile Include="Kontroll.py" />
-    <Compile Include="05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
-    <Compile Include="06 - Kordused.py" />
-    <Compile Include="07 - Praktiline töö. Matemaatika.py" />
-    <Compile Include="08 - Iseseisevöö. Vigade otsing -2. Sirakus.py" />
-    <Compile Include="09 - Praktiline töö. Plokkskeemide koostamine.py" />
-    <Compile Include="10 - IF, While, For ja sisendi valideerimise ülesanded.py" />
-    <Compile Include="11 - Jarjend. List.py" />
-    <Compile Include="12 - Praktiline töö. Sõne ja järjesti funktsioonid.py" />
-    <Compile Include="13 - Praktiline töö . Listid.py" />
-    <Compile Include="14 - Praktiline töö. Isikukood.py" />
+    <Compile Include="02 - Valikud\05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
+    <Compile Include="03 - Kordused\06 - Kordused.py" />
+    <Compile Include="03 - Kordused\07 - Praktiline töö. Matemaatika.py" />
+    <Compile Include="03 - Kordused\08 - Iseseisevöö. Vigade otsing -2. Sirakus.py" />
+    <Compile Include="03 - Kordused\09 - Praktiline töö. Plokkskeemide koostamine.py" />
+    <Compile Include="03 - Kordused\10 - IF, While, For ja sisendi valideerimise ülesanded.py" />
+    <Compile Include="04 - Järjend.List\11 - Jarjend. List.py" />
+    <Compile Include="04 - Järjend.List\12 - Praktiline töö. Sõne ja järjesti funktsioonid.py" />
+    <Compile Include="04 - Järjend.List\13 - Praktiline töö . Listid.py" />
+    <Compile Include="04 - Järjend.List\14 - Praktiline töö. Isikukood.py" />
     <Compile Include="15 - Def.py" />
     <Compile Include="MMM.py" />
     <Compile Include="16 - Praktiline töö. Isikukood.py" />
@@ -45,6 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="17 - Iseseisevtöö. Registreerimine ja autoriseerimine\" />
+    <Folder Include="01 - Lineaarsed programmid\" />
+    <Folder Include="02 - Valikud\" />
+    <Folder Include="03 - Kordused\" />
+    <Folder Include="04 - Järjend.List\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
