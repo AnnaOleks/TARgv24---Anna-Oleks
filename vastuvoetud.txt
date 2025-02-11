@@ -1,0 +1,15 @@
+﻿Anna:5
+Anna:5
+Vasja:3
+Anna:5
+Leo:5
+Vasja:3
+Anna:5
+Leo:5
+Kolja:4
+Vasja:3
+Anna:5
+Leo:5
+Maks:5
+Kolja:4
+Vasja:3

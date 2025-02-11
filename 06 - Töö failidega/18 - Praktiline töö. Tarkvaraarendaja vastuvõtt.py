@@ -1,6 +1,6 @@
 from TV import *
 
-kus_vas=faili_laadimine('kusimused_vastused.txt')
+kus_vas=faili_laadimine('06 - Töö failidega/kusimused_vastused.txt')
 vastuvoetud=[]
 eisobi=[]
 
