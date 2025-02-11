@@ -21,3 +21,4 @@ for nimi, points in vastuvoetud:
 print("\nKandidaadid, kes ei sobi:\n")
 for nimi,points in eisobi:
     print(f"{nimi} - {points} õiget vastust")
+     
