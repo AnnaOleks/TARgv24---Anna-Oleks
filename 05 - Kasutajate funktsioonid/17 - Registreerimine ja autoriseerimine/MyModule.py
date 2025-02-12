@@ -27,8 +27,8 @@ def reg()->bool:
     """Uue kasutaja registreerimine. Kasutajanimi ja parooli sisestamine.
     :rtype: bool Väljastab True, kui inimene on registreeritud
     """
-    kasutaja=loe_failist('Kasutajad.txt')
-    salasonad=loe_failist('Salasonad.txt')
+    kasutaja=loe_failist('05 - Kasutajate funktsioonid/17 - Registreerimine ja autoriseerimine/Kasutajad.txt')
+    salasonad=loe_failist('05 - Kasutajate funktsioonid/17 - Registreerimine ja autoriseerimine/Salasonad.txt')
     while True:
         log=input("Sisesta kasutajanimi: ")
         print()
@@ -41,8 +41,8 @@ def reg()->bool:
     par=parool()
     paroolid.append(par)
     saada_kiri()
-    kirjuta_faili('Kasuatajad.txt',login)
-    kirjuta_faili('Salasonad.txt',paroolid)
+    kirjuta_faili('05 - Kasutajate funktsioonid/17 - Registreerimine ja autoriseerimine/Kasutajad.txt',login)
+    kirjuta_faili('05 - Kasutajate funktsioonid/17 - Registreerimine ja autoriseerimine/Salasonad.txt',paroolid)
     print(f"Olete registreeritud!\nSinu kasutaja nimi on: {log}\nSinu parool on: {par}")
     print()
     return True
@@ -249,16 +249,18 @@ def parooltaast()->str:
             print()
     return par
 
-def saada_kiri(nimi:str, parool:str):
+def saada_kiri():
     kellele=input("Kellele: ")
+    kiri="Sa oled registreeritud."
     smtp_server="smtp.gmail.com"
     port=587
     sender_email="annaoleks88@gmail.com"
     password="xsiw uicd bpgw djpf"
     context=ssl.create_default_context()
     msg=EmailMessage()
+    msg.set_content(kiri)
     msg['Subject']="E-kiri saatmine"
-    msg['From']="Anna Oleks"
+    msg['From']="Ana Oleks"
     msg['To']=kellele
     try:
         server=smtplib.SMTP(smtp_server,port)
@@ -270,4 +272,4 @@ def saada_kiri(nimi:str, parool:str):
         print("Tekkis viga!",e)
     finally:
         server.quit()
-    kiri="Sa oled registreeritud. Sinu kasutajanimi on"+nimi+", sinu salasona on "+parool
+    
