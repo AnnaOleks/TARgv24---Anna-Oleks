@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\17 - Iseseisevtöö. Registreerimine ja autoriseerimine.py</StartupFile>
+    <StartupFile>07 - Sõnastikud.Dictionary\19 - Töö sõnastikutega. Euroopa riigid.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,6 +28,7 @@
     <Compile Include="05 - Kasutajate funktsioonid\16 - Isikukood\DefIK.py" />
     <Compile Include="06 - Töö failidega\18 - Praktiline töö. Tarkvaraarendaja vastuvõtt.py" />
     <Compile Include="06 - Töö failidega\TV.py" />
+    <Compile Include="07 - Sõnastikud.Dictionary\19 - Töö sõnastikutega. Euroopa riigid.py" />
     <Compile Include="Kontroll.py" />
     <Compile Include="02 - Valikud\05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="03 - Kordused\06 - Kordused.py" />
@@ -54,6 +55,7 @@
     <Folder Include="03 - Kordused\" />
     <Folder Include="04 - Järjend.List\" />
     <Folder Include="05 - Kasutajate funktsioonid\" />
+    <Folder Include="07 - Sõnastikud.Dictionary\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\Kasutajad.txt" />
@@ -61,6 +63,7 @@
     <Content Include="06 - Töö failidega\eisoobi.txt" />
     <Content Include="06 - Töö failidega\kusimused_vastused.txt" />
     <Content Include="06 - Töö failidega\vastuvoetud.txt" />
+    <Content Include="07 - Sõnastikud.Dictionary\riigid_pealinnad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
