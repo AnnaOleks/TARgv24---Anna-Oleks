@@ -13,12 +13,29 @@ def failist_to_dict(f:str):
     return riik_pealinn,pealinn_riik,riigid
 
 #käivitame loodud funktsiooni
-riik_pealinn,pealeinn_riik,riigid=failist_to_dict('riigid_pealinnad.txt')
+riik_pealinn,pealeinn_riik,riigid=failist_to_dict('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
 riigid=list(riik_pealinn.keys())
 
 #list riigid
 print(riigid)
+print()
 print(riik_pealinn.keys())
+print()
 #list pealinnad
 pealinnad=list(riik_pealinn.values())
 print(pealinnad)
+print()
+
+#prindime riikide nimetused
+while True:
+    riik=input("Riik: ")
+    if riik=="X":
+        break
+    elif riik not in riigid:
+        print("sellist riiki ei ole")
+    else:
+        print("Pealinn: ",riik_pealinn[riik])
+
+#veerud riigid-pealinnad
+for k, v in riik_pealinn.items():
+    print(k+"-"+v)
