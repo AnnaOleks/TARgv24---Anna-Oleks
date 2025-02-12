@@ -1,5 +1,0 @@
-Mis on veebilehtede loomiseks kasutatava märgistuskeele nimi?: HTML 
-Millist operaatorit kasutatakse Pythonis funktsiooni loomiseks?: def 
-Mis on Pythonis võtmeväärtuspaaride salvestamiseks kasutatava põhilise andmestruktuuri nimi?: Dictionary 
-Millist märki kasutatakse Pythonis kommentaaride jaoks?: # 
-Millist funktsiooni kasutatakse Pythonis andmete väljastamiseks?: print

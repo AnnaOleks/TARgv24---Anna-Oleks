@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>06 - Töö failidega\18 - Praktiline töö. Tarkvaraarendaja vastuvõtt.py</StartupFile>
+    <StartupFile>05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\17 - Iseseisevtöö. Registreerimine ja autoriseerimine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -54,6 +54,13 @@
     <Folder Include="03 - Kordused\" />
     <Folder Include="04 - Järjend.List\" />
     <Folder Include="05 - Kasutajate funktsioonid\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\Kasutajad.txt" />
+    <Content Include="05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\Salasonad.txt" />
+    <Content Include="06 - Töö failidega\eisoobi.txt" />
+    <Content Include="06 - Töö failidega\kusimused_vastused.txt" />
+    <Content Include="06 - Töö failidega\vastuvoetud.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

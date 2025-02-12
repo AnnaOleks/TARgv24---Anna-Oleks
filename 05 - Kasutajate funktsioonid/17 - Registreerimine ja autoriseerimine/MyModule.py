@@ -1,13 +1,34 @@
-#Registreerimine
+#R#Registreerimine
 import random
+import smtplib, ssl
+from email.message import EmailMessage
 
 login=[]
 paroolid=[]
+
+def loe_failist(fail:str)->list:
+    """Funktsioon loeb tekst *.txt failist
+    """
+    f=open(fail,'r',encoding="utf-8")
+    järjend=[]
+    for rida in f:
+        järjend.append(rida.strip())
+    f.close()
+    return järjend
+
+def kirjuta_faili(fail:str,andmed:list):
+    """
+    """
+    with open(fail, 'w', encoding="utf-8") as f:
+        for element in andmed:
+            f.write(element + "\n")
 
 def reg()->bool:
     """Uue kasutaja registreerimine. Kasutajanimi ja parooli sisestamine.
     :rtype: bool Väljastab True, kui inimene on registreeritud
     """
+    kasutaja=loe_failist('Kasutajad.txt')
+    salasonad=loe_failist('Salasonad.txt')
     while True:
         log=input("Sisesta kasutajanimi: ")
         print()
@@ -19,6 +40,9 @@ def reg()->bool:
     login.append(log)
     par=parool()
     paroolid.append(par)
+    saada_kiri()
+    kirjuta_faili('Kasuatajad.txt',login)
+    kirjuta_faili('Salasonad.txt',paroolid)
     print(f"Olete registreeritud!\nSinu kasutaja nimi on: {log}\nSinu parool on: {par}")
     print()
     return True
@@ -225,4 +249,25 @@ def parooltaast()->str:
             print()
     return par
 
-
+def saada_kiri(nimi:str, parool:str):
+    kellele=input("Kellele: ")
+    smtp_server="smtp.gmail.com"
+    port=587
+    sender_email="annaoleks88@gmail.com"
+    password="xsiw uicd bpgw djpf"
+    context=ssl.create_default_context()
+    msg=EmailMessage()
+    msg['Subject']="E-kiri saatmine"
+    msg['From']="Anna Oleks"
+    msg['To']=kellele
+    try:
+        server=smtplib.SMTP(smtp_server,port)
+        server.starttls(context=context)
+        server.login(sender_email,password)
+        server.send_message(msg)
+        print("Informatsioon","Kiri oli saadetud")
+    except Exception as e:
+        print("Tekkis viga!",e)
+    finally:
+        server.quit()
+    kiri="Sa oled registreeritud. Sinu kasutajanimi on"+nimi+", sinu salasona on "+parool

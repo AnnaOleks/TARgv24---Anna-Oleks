@@ -1,5 +1,7 @@
 from MyModule import *
 while True:
+    kas=loe_failist('Kasutajad.txt')
+    sala=loe_failist('Salasonad.txt')
     teh=int(input("Tere tulemast! Vali tehing:\n1-Registreerimine\n2-Autoriseerimine\n3-Nime või parooli muutmine\n4-Unustatud parooli taastamine\n5-Lõpetamine.\n\nSinu valik: "))
     print()
     if teh==1:
