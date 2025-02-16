@@ -1,0 +1,26 @@
+name: Markdown to PDF
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc texlive-xetex
+
+      - name: Convert Markdown to PDF
+        run: pandoc -o dokument.pdf README.md --pdf-engine=xelatex
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-output
+          path: dokument.pdf
