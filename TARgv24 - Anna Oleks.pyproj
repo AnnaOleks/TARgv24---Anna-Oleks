@@ -29,6 +29,7 @@
     <Compile Include="06 - Töö failidega\18 - Praktiline töö. Tarkvaraarendaja vastuvõtt.py" />
     <Compile Include="06 - Töö failidega\TV.py" />
     <Compile Include="07 - Sõnastikud.Dictionary\19 - Töö sõnastikutega. Euroopa riigid.py" />
+    <Compile Include="07 - Sõnastikud.Dictionary\Riigid.py" />
     <Compile Include="Kontroll.py" />
     <Compile Include="02 - Valikud\05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="03 - Kordused\06 - Kordused.py" />

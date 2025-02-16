@@ -6,7 +6,6 @@ Austria-Viin
 Belgia-Brьssel
 Bosnia ja Hertsegoviina-Sarajevo
 Bulgaaria-Sofia
-Eesti-Tallinn
 Gruusia-Thbilisi
 Hispaania-Madrid
 Horvaatia-Zagreb
@@ -48,3 +47,6 @@ Ungari-Budapest
 Valgevene-Minsk
 Vatikan-Vatican
 Venemaa-Moskva
+Vietnam-Hanoi
+Venezuela-Caracas
+Eest-Tallinn

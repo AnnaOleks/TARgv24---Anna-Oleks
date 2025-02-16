@@ -1,20 +1,27 @@
-from random import *
-def failist_to_dict(f:str):
-    riik_pealinn={} #sõnastik {"Riik":"Pealinn"}
-    pealinn_riik={} #sõnastik {"Pealinn":"Riik"}
-    riigid=[] #järjend, kus talletakse riigide nimetused
-    file=open(f,'r',encoding="utf-8")
-    for line in file:
-        k,v=line.strip().split('-') #k-võti, v-väärtus
-        riik_pealinn[k]=v #täidame riik_pealinn
-        pealinn_riik[v]=k #täidame pealinn_riik
-        riigid.append(k)
-    file.close()
-    return riik_pealinn,pealinn_riik,riigid
+from Riigid import *
+
+riik_pealinn,pealeinn_riik,riigid,pealinnad=failist_to_dict('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
+riigid=list(riik_pealinn.keys())
+
+
+
+while True:
+    print("Riikide sõnastik! Mida soovid teha? \n1-Sõnastiku kuvamine\n2-Riigi või pealinna kuvamine\n3-Sõnastikku andmete lisamine\n4-Vigade parandamine\n5-Teadmiste kontroll\n6-Välju")
+    vastus=int(input("Sinu valik: "))
+    if vastus==1:
+        print()
+        print(sonasik())
+        print()
+    elif vastus==2:
+        andmkuv()
+    elif vastus==3:
+        lisamine('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
+    elif vastus==4:
+        uuendamine('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
+
 
 #käivitame loodud funktsiooni
-riik_pealinn,pealeinn_riik,riigid=failist_to_dict('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
-riigid=list(riik_pealinn.keys())
+
 
 #list riigid
 print(riigid)
@@ -27,15 +34,6 @@ print(pealinnad)
 print()
 
 #prindime riikide nimetused
-while True:
-    riik=input("Riik: ")
-    if riik=="X":
-        break
-    elif riik not in riigid:
-        print("sellist riiki ei ole")
-    else:
-        print("Pealinn: ",riik_pealinn[riik])
+
 
 #veerud riigid-pealinnad
-for k, v in riik_pealinn.items():
-    print(k+"-"+v)
