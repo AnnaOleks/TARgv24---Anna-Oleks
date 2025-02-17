@@ -1,4 +1,6 @@
 from random import *
+from os import path, remove, system
+from gtts import *
 
 riik_pealinn={} #sõnastik {"Riik":"Pealinn"}
 pealinn_riik={} #sõnastik {"Pealinn":"Riik"}
@@ -166,3 +168,4 @@ def kontrolltest():
         tulemus=count*100/kusimusi
         print(f"Sul on {count} õiget vastust. Test on sooritud {tulemus} protsendiks")
         print()
+
