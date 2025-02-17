@@ -18,6 +18,10 @@ while True:
         lisamine('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
     elif vastus==4:
         uuendamine('07 - Sõnastikud.Dictionary/riigid_pealinnad.txt')
+    elif vastus==5:
+        kontrolltest()
+    elif vastus==6:
+        break
 
 
 #käivitame loodud funktsiooni

@@ -26,10 +26,13 @@ def andmkuv():
         print("1-Kuvada riigi\n2-Kuvada paelinna\n3-Välju")
         vastus=int(input("Sinu valik: "))
         print()
+        print()
         if vastus==1:
-            pealinn=input("Pealinn: ")
+            pealinn=input("Pealinn (väljumiseks vajuta X): ")
             print()
-            if pealinn not in pealinnad:
+            if pealinn.upper()=="X":
+                break
+            elif pealinn not in pealinnad:
                 print("Sellist pealinna sõnastikus ei ole")
                 print()
             else:
@@ -128,3 +131,38 @@ def uuendamine(f:str):
 
 def kontrolltest():
     count=0
+    kusimusi=0
+    print("Alustame testi (väljumiseks vajuta X): ")
+    while True:
+        kusimusevariant=choice(["riik","pealinn"])
+        if kusimusevariant=="riik":
+            riik=choice(riigid)
+            vastus=input(f"{riik}: pealinn on ")
+            oigevastus=riik_pealinn[riik]
+            if oigevastus==vastus:
+                count+=1
+                print("Õige vastus! Tubli!")
+                print()
+            elif vastus.upper()=="X":
+                break
+            else:
+                print(f"Kahjuks sa eksisid!\nÕige vastus on:\nRiik: {riik}\nPealinn: {oigevastus}")
+                print()
+        else:
+            pealinn=choice(pealinnad)
+            vastus=input(f"{pealinn}: riik on ")
+            oigevastus=pealinn_riik[pealinn]
+            if oigevastus==vastus:
+                count+=1
+                print("Õige vastus! Tubli!")
+                print()
+            elif vastus.upper()=="X":
+                break
+            else:
+                print(f"Kahjuks sa eksisid!\nÕige vastus on:\nRiik: {oigevastus}\nPealinn: {pealinn}")
+                print()
+        kusimusi+=1
+    if kusimusi>0:
+        tulemus=count*100/kusimusi
+        print(f"Sul on {count} õiget vastust. Test on sooritud {tulemus} protsendiks")
+        print()
