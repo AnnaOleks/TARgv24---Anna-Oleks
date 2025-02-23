@@ -1,6 +1,8 @@
+from multiprocessing.managers import RemoteError
 from random import *
-from os import path, remove, system
+from os import system
 from gtts import *
+import os
 
 riik_pealinn={} #sõnastik {"Riik":"Pealinn"}
 pealinn_riik={} #sõnastik {"Pealinn":"Riik"}
@@ -26,34 +28,44 @@ def sonasik():
 def andmkuv():
     while True:
         print("1-Kuvada riigi\n2-Kuvada paelinna\n3-Välju")
+        raagimine("1-Kuvada riigi\n2-Kuvada paelinna\n3-Välju","et")
         vastus=int(input("Sinu valik: "))
+        raagimine("Sinu valik","et")
         print()
         print()
         if vastus==1:
             pealinn=input("Pealinn (väljumiseks vajuta X): ")
+            raagimine("Pealinn (väljumiseks vajuta X): ","et")
             print()
             if pealinn.upper()=="X":
                 break
             elif pealinn not in pealinnad:
                 print("Sellist pealinna sõnastikus ei ole")
+                raagimine("Sellist pealinna sõnastikus ei ole","et")
                 print()
             else:
                 print(f"Riik: {pealinn_riik[pealinn]}\nPealinn: {pealinn}")
+                raagimine(f"Riik: {pealinn_riik[pealinn]}\nPealinn: {pealinn}","et")
                 print()
         elif vastus==2:
             riik=input("Riik (väljumiseks vajuta X): ")
+            raagimine(f"Riik (väljumiseks vajuta X)","et")
             print()
             if riik.upper()=="X":
                 break
             elif riik not in riigid:
-                print("sellist riiki ei ole")
+                print("Sellist riiki ei ole")
+                raagimine(f"Sellist riiki ei ole","et")
+                print()
             else:
                 print(f"Riik: {riik}\nPealinn: {riik_pealinn[riik]}")
+                raagimine(f"Riik: {riik}\nPealinn: {riik_pealinn[riik]}","et")
                 print()
         elif vastus==3:
             break
         else:
             print("Vali 1,2,3!")
+            raagimine("Vali 1,2,3!","et")
     return True
 
 def lisamine(f:str):
@@ -169,3 +181,8 @@ def kontrolltest():
         print(f"Sul on {count} õiget vastust. Test on sooritud {tulemus} protsendiks")
         print()
 
+def raagimine(tekst:str,keel:str):
+    obj=gTTS(text=tekst,lang=keel,slow=False).save("heli.mp3")
+    system("heli.mp3")
+    
+ 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>07 - Sõnastikud.Dictionary\19 - Töö sõnastikutega. Euroopa riigid.py</StartupFile>
+    <StartupFile>08 - Graafiline liides. Tkinter ja Matplotlib\Kvadraatilise võrrandi lahendamine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,6 +30,10 @@
     <Compile Include="06 - Töö failidega\TV.py" />
     <Compile Include="07 - Sõnastikud.Dictionary\19 - Töö sõnastikutega. Euroopa riigid.py" />
     <Compile Include="07 - Sõnastikud.Dictionary\Riigid.py" />
+    <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\GraafilineLiides.py" />
+    <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Kvadraatilise võrrandi lahendamine.py" />
+    <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Tkinter.py" />
+    <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Grafik.py" />
     <Compile Include="Kontroll.py" />
     <Compile Include="02 - Valikud\05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="03 - Kordused\06 - Kordused.py" />
@@ -57,6 +61,7 @@
     <Folder Include="04 - Järjend.List\" />
     <Folder Include="05 - Kasutajate funktsioonid\" />
     <Folder Include="07 - Sõnastikud.Dictionary\" />
+    <Folder Include="08 - Graafiline liides. Tkinter ja Matplotlib\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\Kasutajad.txt" />
