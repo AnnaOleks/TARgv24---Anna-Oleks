@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>08 - Graafiline liides. Tkinter ja Matplotlib\Kvadraatilise võrrandi lahendamine.py</StartupFile>
+    <StartupFile>08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -70,6 +70,8 @@
     <Content Include="06 - Töö failidega\kusimused_vastused.txt" />
     <Content Include="06 - Töö failidega\vastuvoetud.txt" />
     <Content Include="07 - Sõnastikud.Dictionary\riigid_pealinnad.txt" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\fon.jpg" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
