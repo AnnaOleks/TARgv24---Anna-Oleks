@@ -71,6 +71,7 @@
     <Content Include="06 - Töö failidega\kusimused_vastused.txt" />
     <Content Include="06 - Töö failidega\vastuvoetud.txt" />
     <Content Include="07 - Sõnastikud.Dictionary\riigid_pealinnad.txt" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\drafts.txt" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\fon.jpg" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py" />
   </ItemGroup>

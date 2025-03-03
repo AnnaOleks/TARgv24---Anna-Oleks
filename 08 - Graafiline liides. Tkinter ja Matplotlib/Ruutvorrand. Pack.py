@@ -55,8 +55,6 @@ def Graafik():
 	plt.legend()
 	plt.show
 
-	pass
-
 def entrycolor(event):
 	i=lbl_a.get()
 	if i == "":
@@ -78,24 +76,24 @@ def entrycolor(event):
 
 def aken_pack():
 	aken=Tk()
-	aken.geometry("650x260")
+	aken.geometry("900x500")
 	aken.title("Ruutvorrand")
 	aken.resizable(False,False)
 
 	original_image= Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/fon.jpg")
-	resized_image=original_image.resize((650,260))
+	resized_image=original_image.resize((900,500))
 	bgimage=ImageTk.PhotoImage(resized_image)
 
-	lblLBG=Label(aken,image=bgimage)
-	lblLBG.place(x=0, y=0)
+	labelBG=Label(aken,image=bgimage)
+	labelBG.place(x=0, y=0)
 
-	f1=Frame(aken,width=650,height=260)
+	f1=Frame(aken,width=900,height=500, bg=0)
 	f1.pack(side=TOP)
 
 	lbl=Label(f1,text="Ruutvorrandite lahendamine", font="Calibri 26", fg="green", bg="lightblue")
 	lbl.pack(side=TOP)
 
-	lbl_vastus=Label(f1,text="Lahendamine", height=4, width=60, font="Calibri 26", bg="yellow")
+	lbl_vastus=Label(f1,text="Lahendamine", height=2, width=40, font="Calibri 26", bg="yellow")
 	lbl_vastus.pack(side=BOTTOM)
 
 	lbl_a=Entry(f1, font="Calibri 26", fg="green", bg="lightblue", width=3)
@@ -125,7 +123,7 @@ def aken_pack():
 
 	aken.mainloop()
 
-#aken_pack()
+aken_pack()
 
 def aken_grid():
 	aken=Tk()
@@ -176,4 +174,4 @@ def aken_grid():
 
 	aken.mainloop()
 
-aken_grid()
+#aken_grid()
