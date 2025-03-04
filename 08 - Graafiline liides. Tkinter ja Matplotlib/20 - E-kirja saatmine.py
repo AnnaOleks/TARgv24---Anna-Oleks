@@ -31,6 +31,7 @@ def kirieelvaade():
     global file
     salvestakiri()
     eel_aken=Toplevel()
+    eel_aken.iconbitmap(default="08 - Graafiline liides. Tkinter ja Matplotlib/letter_opened.ico")
     eel_aken.geometry("300x500")
     eel_aken.title("Kirja eelvaade!")
 
@@ -110,6 +111,7 @@ def close():
     aken.destroy()
 
 aken=Tk()
+aken.iconbitmap(default="08 - Graafiline liides. Tkinter ja Matplotlib/letter_icon.ico")
 aken.geometry("550x550")
 aken.title("E-kirja saatmine")
 
@@ -143,10 +145,10 @@ kirientry.grid(row=4, column=3, columnspan=2)
 p2=Label(aken, text=" ", width=2)
 p2.grid(row=5, column=1)
 
-lisapilt=Button(aken, text="LISA FAIL", font="Calibri 20", fg="white", bg="slategray", command=lambda:vali_pilt())
+lisapilt=Button(aken, text="LISA FAIL", font="Calibri 20", fg="white", bg="slategray", width=11, command=lambda:vali_pilt())
 lisapilt.grid(row=6, column=3)
 
-saada=Button(aken, text="SAADA", font="Calibri 20", fg="white", bg="slategray", command=lambda:saada_kiri())
+saada=Button(aken, text="SAADA", font="Calibri 20", fg="white", bg="slategray", width=11, command=lambda:saada_kiri())
 saada.grid(row=6, column=4)
 
 p=Label(aken, text=" ", height=2)
