@@ -71,10 +71,16 @@
     <Content Include="06 - Töö failidega\kusimused_vastused.txt" />
     <Content Include="06 - Töö failidega\vastuvoetud.txt" />
     <Content Include="07 - Sõnastikud.Dictionary\riigid_pealinnad.txt" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\document.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\drafts.txt" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\envelope_mail_letter_send.png" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Floppy-disc.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\fon.jpg" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\iconfinder.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\letter_icon.ico" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\magnifying_glass.png" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Paper-clip.png" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\PaperClip.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\save_icon.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\send.png" />

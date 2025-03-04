@@ -107,6 +107,108 @@ def saada_kiri():
     finally:
         server.quit()
 
+def heleteema():
+    global sendicon
+    global saveicon
+    global lisaicon
+    global vaataicon
+
+    aken.configure(bg="#f5f5f5")
+
+    send_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/send.png")
+    send_icon_resize=send_icon.resize((20,20))
+    sendicon=ImageTk.PhotoImage(send_icon_resize)
+
+    saada.configure(image=sendicon, fg="black", bg="Gainsboro")
+
+    lahter2.configure(bg="#f5f5f5")
+
+    save_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/save_icon.png")
+    save_icon_resize=save_icon.resize((20,20))
+    saveicon=ImageTk.PhotoImage(send_icon_resize)
+
+    salvesta.configure(image=saveicon, fg="black", bg="Gainsboro")
+
+    lahter4.configure(bg="#f5f5f5")
+
+    lisa_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/PaperClip.png")
+    lisa_icon_resize=lisa_icon.resize((20,20))
+    lisaicon=ImageTk.PhotoImage(lisa_icon_resize)
+
+    lisapilt.configure(image=lisaicon, fg="black", bg="Gainsboro")
+
+    lahter6.configure(bg="#f5f5f5")
+
+    vaata_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/iconfinder.png")
+    vaata_icon_resize=vaata_icon.resize((20,20))
+    vaataicon=ImageTk.PhotoImage(vaata_icon_resize)
+
+    eelvaade.configure(image=vaataicon, fg="black", bg="Gainsboro")
+    
+    vahe1.configure(bg="#f5f5f5")
+    mail.configure(fg="black", bg="lightgray")
+    mailentry.configure(fg="black", bg="lightgray")
+    teema.configure(fg="black", bg="lightgray")
+    teemaentry.configure(fg="black", bg="lightgray")
+    lisa.configure(fg="black", bg="lightgray")
+    lisaentry.configure(bg="#f5f5f5", fg="black")
+    kiri.configure(fg="black", bg="lightgray")
+    kirientry.configure(fg="black", bg="lightgray")
+    reziim.configure(bg="#f5f5f5", fg="black")
+    hele.configure(fg="black", bg="lightgray")
+    tume.configure(fg="black", bg="lightgray")
+
+def tumeteema():
+    global tumesendicon
+    global tumesaveicon
+    global tumelisaicon
+    global tumevaataicon
+
+    aken.configure(bg="black")
+
+    tume_send_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/envelope_mail_letter_send.png")
+    tume_send_icon_resize=tume_send_icon.resize((30,20))
+    tumesendicon=ImageTk.PhotoImage(tume_send_icon_resize)
+
+    saada.configure(image=tumesendicon, bg="#242426", fg="white")
+
+    lahter2.configure(bg="black")
+
+    tume_save_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/Floppy-disc.png")
+    tume_save_icon_resize=tume_save_icon.resize((20,20))
+    tumesaveicon=ImageTk.PhotoImage(tume_save_icon_resize)
+
+    salvesta.configure(image=tumesaveicon, bg="#242426", fg="white")
+
+    lahter4.configure(bg="black")
+
+    tume_lisa_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/Paper-clip.png")
+    tume_lisa_icon_resize=tume_lisa_icon.resize((20,20))
+    tumelisaicon=ImageTk.PhotoImage(tume_lisa_icon_resize)
+
+    lisapilt.configure(image=tumelisaicon, bg="#242426", fg="white")
+
+    lahter6.configure(bg="black")
+
+    tume_vaata_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/document.png")
+    tume_vaata_icon_resize=tume_vaata_icon.resize((20,20))
+    tumevaataicon=ImageTk.PhotoImage(tume_vaata_icon_resize)
+
+    eelvaade.configure(image=tumevaataicon, bg="#242426", fg="white")
+    
+    vahe1.configure(bg="black")
+    mail.configure(bg="#242426", fg="white")
+    mailentry.configure(bg="#242426", fg="white")
+    teema.configure(bg="#242426", fg="white")
+    teemaentry.configure(bg="#242426", fg="white")
+    lisa.configure(bg="#242426", fg="white")
+    lisaentry.configure(bg="black", fg="white")
+    kiri.configure(bg="#242426", fg="white")
+    kirientry.configure(bg="#242426", fg="white")
+    reziim.configure(bg="black", fg="white")
+    hele.configure(bg="#242426", fg="white")
+    tume.configure(bg="#242426", fg="white")
+    
 def close():
     salvestakiri()
     aken.destroy()
@@ -115,6 +217,11 @@ aken=Tk()
 aken.iconbitmap(default="08 - Graafiline liides. Tkinter ja Matplotlib/letter_icon.ico")
 aken.geometry("470x470")
 aken.title("E-kirja saatmine")
+
+global sendicon
+global saveicon
+global lisaicon
+global vaataicon
 
 send_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/send.png")
 send_icon_resize=send_icon.resize((20,20))
@@ -136,7 +243,7 @@ salvesta.grid(row=1, column=3)
 lahter4=Label(aken, text=" ", width=1)
 lahter4.grid(row=1, column=4)
 
-lisa_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/attach.png")
+lisa_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/PaperClip.png")
 lisa_icon_resize=lisa_icon.resize((20,20))
 lisaicon=ImageTk.PhotoImage(lisa_icon_resize)
 
@@ -180,7 +287,14 @@ kiri.grid(row=6, column=1, sticky="nsew")
 kirientry=Text(aken, font="calibri 14", fg="black", bg="lightgray", width=33, height=5)
 kirientry.grid(row=6, column=3, columnspan=5)
 
+reziim=Label(aken, text="Vali reziimi: ", font="Calibri 14")
+reziim.place(x=230, y=430)
 
+hele=Button(text="HELE", font="calibri 14", fg="black", bg="lightgray", width=5, command=lambda:heleteema())
+hele.place(x=329, y=423)
+
+tume=Button(text="TUME", font="calibri 14", fg="black", bg="lightgray", width=5, command=lambda:tumeteema())
+tume.place(x=388, y=423)
 
 aken.protocol("WM_DELETE_WINDOW", close) #chat GPT
 
