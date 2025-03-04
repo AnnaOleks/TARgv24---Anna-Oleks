@@ -72,11 +72,12 @@
     <Content Include="06 - Töö failidega\vastuvoetud.txt" />
     <Content Include="07 - Sõnastikud.Dictionary\riigid_pealinnad.txt" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\drafts.txt" />
-    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\email-icon%402x.jpg" />
-    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Email-Icon-Transparent-Images.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\fon.jpg" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\iconfinder.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\letter_icon.ico" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\save_icon.png" />
+    <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\send.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

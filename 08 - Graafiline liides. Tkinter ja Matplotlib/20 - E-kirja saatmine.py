@@ -5,13 +5,14 @@ from tkinter import messagebox
 from email.message import EmailMessage
 import smtplib, ssl
 import imghdr
+from PIL import Image, ImageTk
 
 sender_email="annaoleks88@gmail.com"
 
 def vali_pilt():
     global file
     file=filedialog.askopenfilename()
-    lisaentry.configure(text=file, font="Calibri 8")
+    lisaentry.configure(text=file, font="Calibri 8", justify=LEFT)
     return file
 
 def email_kontroll():
@@ -112,50 +113,74 @@ def close():
 
 aken=Tk()
 aken.iconbitmap(default="08 - Graafiline liides. Tkinter ja Matplotlib/letter_icon.ico")
-aken.geometry("550x550")
+aken.geometry("470x470")
 aken.title("E-kirja saatmine")
 
-mail=Label(aken,text="EMAIL:", font="Calibri 20", fg="white", bg="slategray", width=10)
-mail.grid(row=1, column=1)
+send_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/send.png")
+send_icon_resize=send_icon.resize((20,20))
+sendicon=ImageTk.PhotoImage(send_icon_resize)
 
-p1=Label(aken, text=" ", width=2)
-p1.grid(row=1, column=2, rowspan=6)
+saada=Button(aken, image=sendicon, text="SAADA", compound=TOP, font="Calibri 14", fg="black", bg="Gainsboro", width=70, padx=10, pady=10, command=lambda:saada_kiri())
+saada.grid(row=1, column=1)
 
-mailentry=Entry(aken,font="Calibri 15", fg="black", bg="lightgray", width=35)
-mailentry.grid(row=1, column=3, columnspan=2)
+lahter2=Label(aken, text=" ", width=1)
+lahter2.grid(row=1, column=2)
 
-teema=Label(aken,text="TEEMA:", font="Calibri 20", fg="white", bg="slategray",width=10)
-teema.grid(row=2, column=1)
+save_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/save_icon.png")
+save_icon_resize=save_icon.resize((20,20))
+saveicon=ImageTk.PhotoImage(send_icon_resize)
 
-teemaentry=Entry(aken,font="Calibri 15", fg="black", bg="lightgray", width=35)
-teemaentry.grid(row=2, column=3, columnspan=2)
+salvesta=Button(aken, image=saveicon, text="SALVESTA", compound=TOP, font="Calibri 14", fg="black", bg="Gainsboro", width=70, padx=10, pady=10, command=lambda:salvestakiri())
+salvesta.grid(row=1, column=3)
 
-lisa=Label(aken,text="LISA:", font="Calibri 20", fg="white", bg="slategray", width=10)
-lisa.grid(row=3, column=1)
+lahter4=Label(aken, text=" ", width=1)
+lahter4.grid(row=1, column=4)
 
-lisaentry=Label(aken,text="...", font="Calibri 15", fg="black")
-lisaentry.grid(row=3, column=3, columnspan=2)
+lisa_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/attach.png")
+lisa_icon_resize=lisa_icon.resize((20,20))
+lisaicon=ImageTk.PhotoImage(lisa_icon_resize)
 
-kiri=Label(aken, text="KIRI", font="calibri 20", fg="white", bg="slategray", width=10)
-kiri.grid(row=4, column=1)
+lisapilt=Button(aken, image=lisaicon, text="LISA", compound=TOP, font="Calibri 14", fg="black", bg="Gainsboro", width=70, padx=10, pady=10, command=lambda:vali_pilt())
+lisapilt.grid(row=1, column=5)
 
-kirientry=Text(aken, font="calibri 15", fg="black", bg="lightgray", width=35, height=5)
-kirientry.grid(row=4, column=3, columnspan=2)
+lahter6=Label(aken, text=" ", width=1)
+lahter6.grid(row=1, column=6)
 
-p2=Label(aken, text=" ", width=2)
-p2.grid(row=5, column=1)
+vaata_icon=Image.open(r"08 - Graafiline liides. Tkinter ja Matplotlib/iconfinder.png")
+vaata_icon_resize=vaata_icon.resize((20,20))
+vaataicon=ImageTk.PhotoImage(vaata_icon_resize)
 
-lisapilt=Button(aken, text="LISA FAIL", font="Calibri 20", fg="white", bg="slategray", width=11, command=lambda:vali_pilt())
-lisapilt.grid(row=6, column=3)
+eelvaade=Button(aken, image=vaataicon, text="VAATA", compound=TOP, font="Calibri 14", fg="black", bg="Gainsboro", width=70, padx=10, pady=10, command=lambda:kirieelvaade())
+eelvaade.grid(row=1, column=7)
 
-saada=Button(aken, text="SAADA", font="Calibri 20", fg="white", bg="slategray", width=11, command=lambda:saada_kiri())
-saada.grid(row=6, column=4)
+vahe1=Label(aken, text=" ", width=2)
+vahe1.grid(row=2, column=1)
 
-p=Label(aken, text=" ", height=2)
-p.grid(row=7, column=1)
+mail=Label(aken,text="EMAIL:", font="Calibri 14", fg="black", bg="lightgray", width=10, anchor="w")
+mail.grid(row=3, column=1)
 
-eelvaade=Button(aken, text="EELVAADE", font="Calibri 15", fg="white", bg="slategray", command=lambda:kirieelvaade())
-eelvaade.grid(row=8, column=1)
+mailentry=Entry(aken,font="Calibri 14", fg="black", bg="lightgray", width=33)
+mailentry.grid(row=3, column=3, columnspan=5)
+
+teema=Label(aken,text="TEEMA:", font="Calibri 14", fg="black", bg="lightgray", width=10, anchor="w")
+teema.grid(row=4, column=1)
+
+teemaentry=Entry(aken,font="Calibri 14", fg="black", bg="lightgray", width=33)
+teemaentry.grid(row=4, column=3, columnspan=5)
+
+lisa=Label(aken,text="LISA:", font="Calibri 14", fg="black", bg="lightgray", width=10, anchor="w")
+lisa.grid(row=5, column=1)
+
+lisaentry=Label(aken,text="...", font="Calibri 14", fg="black")
+lisaentry.grid(row=5, column=3, columnspan=5)
+
+kiri=Label(aken, text="KIRI:", font="Calibri 14", fg="black", bg="lightgray", width=10, anchor="w")
+kiri.grid(row=6, column=1, sticky="nsew")
+
+kirientry=Text(aken, font="calibri 14", fg="black", bg="lightgray", width=33, height=5)
+kirientry.grid(row=6, column=3, columnspan=5)
+
+
 
 aken.protocol("WM_DELETE_WINDOW", close) #chat GPT
 
