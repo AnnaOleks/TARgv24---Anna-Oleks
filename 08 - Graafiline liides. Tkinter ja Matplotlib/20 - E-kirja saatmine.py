@@ -69,9 +69,13 @@ def salvestakiri():
            "teema":teemaentry.get(),
            "kiri":kirientry.get("1.0", END),
            "lisa":file}
-    with open(fail,'w', encoding="utf-8-sig") as f:
-        for key, value in draft.items():
-            f.write(f"{key}: {value}\n")
+    try:
+        with open(fail,'w', encoding="utf-8-sig") as f:
+            for key, value in draft.items():
+                f.write(f"{key}: {value}\n")
+        messagebox.showinfo("Informatsioon", "Kiri on salvestatud")
+    except:
+        messagebox.showinfo("Informatsioon", "Tekkis viga!")
     return fail
 
 def saada_kiri():
