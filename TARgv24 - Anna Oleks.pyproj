@@ -87,6 +87,7 @@
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\save_icon.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\send.png" />
     <Content Include="09 - Iseseisev praktiline töö\bg.jpg" />
+    <Content Include="09 - Iseseisev praktiline töö\bg.png" />
     <Content Include="09 - Iseseisev praktiline töö\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
