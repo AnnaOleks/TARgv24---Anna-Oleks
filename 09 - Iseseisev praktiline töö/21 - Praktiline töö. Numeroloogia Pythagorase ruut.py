@@ -1,10 +1,27 @@
 ﻿from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import font
+import re   
+from tkinter import messagebox
 
 def clearsynentry(event):
     if synentry.get()=="dd.mm.yyyy":
         synentry.delete(0, END)
+
+def kuupaevakontroll():
+    kuupaev=synentry.get()
+    vorm=r"^([0-2][0-9]|3[01])\.(0[1-9]|1[0-2])\.\d{4}$"
+    if re.fullmatch(vorm, kuupaev):
+        messagebox.showinfo("Informatsioon", "Õige kuupaev")
+        synentry.config(bg="#fdddeb")
+    else:
+        synentry.config(bg="#c8d3f8")
+        messagebox.showinfo("Informatsioon", "Vale kuupaev")
+
+def esimenerida():
+    kuupaev=synentry.get()
+    rida_list=list(kuupaev)
+    tulemus.config(text=f"Sinu tulemus: \n {''.join(rida_list)}")
 
 aken=Tk()
 aken.geometry("450x800")
@@ -38,13 +55,13 @@ synentry.pack(side=LEFT, padx=5, fill="y")
 synentry.insert(0, "dd.mm.yyyy")
 synentry.bind("<FocusIn>", clearsynentry)
 
-arvuta=Button(synentry_frame, text="Arvuta", font="Times 12 bold", bg="#c8d3f8")
+arvuta=Button(synentry_frame, text="Arvuta", font="Times 12 bold", bg="#c8d3f8", command=lambda:[kuupaevakontroll(), esimenerida()])
 arvuta.pack(side=LEFT, padx=5)
 
 tabel=Frame(aken, bg="white", borderwidth=5, width=350, height=350, highlightbackground="#c8d3f8", highlightcolor="#fdddeb", highlightthickness=3)
 tabel.place(relx=0.5, rely=0.4, anchor="n", width=350)
 
-tulemus=Label(tabel, text="Sinu tulemus: ", font="Times 12 bold", bg="white")
+tulemus=Label(tabel, text="Sinu tulemus:", font="Times 12 bold", bg="white")
 tulemus.grid(row=1, column=1, columnspan=3, ipady=10)
 
 nupp1=Button(tabel, text=1, font="Times 12 bold", bg="#c8d3f8", width=10)
