@@ -1,4 +1,5 @@
-﻿from tkinter import *
+﻿from ast import Lambda
+from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import font
 import re   
@@ -154,23 +155,21 @@ def analuus():
             tahendused.append(v)
 
 def tulemuseaken():
-    global number_tahendus
-    global lisabg
     lisaaken=Tk()
     lisaaken.geometry("450x800")
-    lisaaken.title("Sinu tulemuste selgitus")
+    lisaaken.title("Numeroloogia Pythagorase ruut")
     lisaaken.resizable(width=False, height=False)
-    
-    lisaorig_bg=Image.open(r"09 - Iseseisev praktiline töö/lisabg.png")
-    lisaresize_bg=lisaorig_bg.resize((450,800))
-    lisabg=ImageTk.PhotoImage(lisaresize_bg)
 
-    labelbg=Label(lisaaken, image=lisabg)
-    labelbg.image = lisabg
+    orig_lisabg=Image.open(r"09 - Iseseisev praktiline töö/bg.png")
+    resize_lisabg=orig_lisabg.resize((450,800))
+    bg=ImageTk.PhotoImage(resize_lisabg)
+
+    labelbg=Label(lisaaken, image=bg)
     labelbg.place(x=0, y=0, relwidth=1, relheight=1)
 
-    lisa_frame=Frame(lisaaken, bg="white", borderwidth=5, width=350, height=400, highlightbackground="#c8d3f8", highlightcolor="#fdddeb", highlightthickness=3)
-    lisa_frame.place(relx=0.5, rely=0.5, anchor="center", width=350)
+    lisaframe=Frame(lisaaken, bg="white", borderwidth=5, width=350, height=400, highlightbackground="#c8d3f8", highlightcolor="#fdddeb", highlightthickness=3)
+    lisaframe.place(relx=0.5, rely=0.05, anchor="n", width=350)
+
 
     
 
@@ -246,7 +245,7 @@ vahe=Label(tabel, text=" ")
 vahe.grid(row=5,column=1)
 vahe.grid_forget()
 
-vastus=Button(tabel, text="Tulemus", font="Times 12 bold", bg="#c8d3f8", width=10, command=tulemuseaken())
+vastus=Button(tabel, text="Tulemus", font="Times 12 bold", bg="#c8d3f8", width=10, command = lambda: tulemuseaken())
 vastus.grid(row=6, column=2)
 vastus.grid_forget()
 

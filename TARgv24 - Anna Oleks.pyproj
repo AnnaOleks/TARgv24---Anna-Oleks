@@ -89,6 +89,7 @@
     <Content Include="09 - Iseseisev praktiline töö\bg.jpg" />
     <Content Include="09 - Iseseisev praktiline töö\bg.png" />
     <Content Include="09 - Iseseisev praktiline töö\icon.ico" />
+    <Content Include="09 - Iseseisev praktiline töö\lisabg.jpg" />
     <Content Include="09 - Iseseisev praktiline töö\lisabg.png" />
     <Content Include="09 - Iseseisev praktiline töö\Text.txt" />
   </ItemGroup>
