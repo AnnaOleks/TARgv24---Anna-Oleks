@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a3bd153e-9d73-424d-a935-a8687062b5fb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>09 - Iseseisev praktiline töö\21 - Praktiline töö. Numeroloogia Pythagorase ruut.py</StartupFile>
+    <StartupFile>09_-_Iseseisev_praktiline_töö\21_-_Praktiline_töö._Numeroloogia_Pythagorase_ruut.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,7 +35,7 @@
     <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Kvadraatilise võrrandi lahendamine.py" />
     <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Tkinter.py" />
     <Compile Include="08 - Graafiline liides. Tkinter ja Matplotlib\Grafik.py" />
-    <Compile Include="09 - Iseseisev praktiline töö\21 - Praktiline töö. Numeroloogia Pythagorase ruut.py" />
+    <Compile Include="09_-_Iseseisev_praktiline_töö\21_-_Praktiline_töö._Numeroloogia_Pythagorase_ruut.py" />
     <Compile Include="Kontroll.py" />
     <Compile Include="02 - Valikud\05 - Iseseisevtöö. Valiklaused %28Ruutvõrrand%29.py" />
     <Compile Include="03 - Kordused\06 - Kordused.py" />
@@ -64,7 +64,7 @@
     <Folder Include="05 - Kasutajate funktsioonid\" />
     <Folder Include="07 - Sõnastikud.Dictionary\" />
     <Folder Include="08 - Graafiline liides. Tkinter ja Matplotlib\" />
-    <Folder Include="09 - Iseseisev praktiline töö\" />
+    <Folder Include="09_-_Iseseisev_praktiline_töö\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="05 - Kasutajate funktsioonid\17 - Registreerimine ja autoriseerimine\Kasutajad.txt" />
@@ -86,12 +86,12 @@
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\Ruutvorrand. Pack.py" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\save_icon.png" />
     <Content Include="08 - Graafiline liides. Tkinter ja Matplotlib\send.png" />
-    <Content Include="09 - Iseseisev praktiline töö\bg.jpg" />
-    <Content Include="09 - Iseseisev praktiline töö\bg.png" />
-    <Content Include="09 - Iseseisev praktiline töö\icon.ico" />
-    <Content Include="09 - Iseseisev praktiline töö\lisabg.jpg" />
-    <Content Include="09 - Iseseisev praktiline töö\lisabg.png" />
-    <Content Include="09 - Iseseisev praktiline töö\Text.txt" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\bg.jpg" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\bg.png" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\icon.ico" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\lisabg.jpg" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\lisabg.png" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\Text.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

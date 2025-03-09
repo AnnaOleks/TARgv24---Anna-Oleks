@@ -1,5 +1,4 @@
-﻿from ast import Lambda
-from tkinter import *
+﻿from tkinter import *
 from PIL import Image, ImageTk
 from tkinter import font
 import re   
@@ -22,7 +21,6 @@ def kuupaevakontroll():
         return False
 
 def esimenerida():
-    global rida_list
     global rida1
     kuupaev=synentry.get()
     rida_list=list(kuupaev)
@@ -155,15 +153,15 @@ def analuus():
             tahendused.append(v)
 
 def tulemuseaken():
-    lisaaken=Tk()
+    lisaaken=Toplevel()
     lisaaken.geometry("450x800")
-    lisaaken.title("Numeroloogia Pythagorase ruut")
+    lisaaken.title("Sinu tulemus")
     lisaaken.resizable(width=False, height=False)
 
-    orig_lisabg=Image.open(r"09 - Iseseisev praktiline töö/bg.png")
+    orig_lisabg=Image.open(r"09_-_Iseseisev_praktiline_töö/lisabg.png")
     resize_lisabg=orig_lisabg.resize((450,800))
     bg=ImageTk.PhotoImage(resize_lisabg)
-
+    lisaaken.bg = bg
     labelbg=Label(lisaaken, image=bg)
     labelbg.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -178,7 +176,7 @@ aken.geometry("450x800")
 aken.title("Numeroloogia Pythagorase ruut")
 aken.resizable(width=False, height=False)
 
-orig_bg=Image.open(r"09 - Iseseisev praktiline töö/bg.png")
+orig_bg=Image.open(r"09_-_Iseseisev_praktiline_töö/bg.png")
 resize_bg=orig_bg.resize((450,800))
 bg=ImageTk.PhotoImage(resize_bg)
 
