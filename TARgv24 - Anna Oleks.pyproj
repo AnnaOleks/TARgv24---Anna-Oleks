@@ -91,6 +91,7 @@
     <Content Include="09_-_Iseseisev_praktiline_töö\icon.ico" />
     <Content Include="09_-_Iseseisev_praktiline_töö\lisabg.jpg" />
     <Content Include="09_-_Iseseisev_praktiline_töö\lisabg.png" />
+    <Content Include="09_-_Iseseisev_praktiline_töö\pythagorase_andmed.txt" />
     <Content Include="09_-_Iseseisev_praktiline_töö\Text.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
